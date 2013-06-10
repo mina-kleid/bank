@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f64b65dd-8393-4709-b3a6-de7f702f74b9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bank.iml" afterPath="$PROJECT_DIR$/.idea/bank.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bank.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370886758120" ignored="false" />
+    <file path="/Dummy.txt" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370886779728" ignored="false" />
     <file path="/database.yml" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370880613689" ignored="false" />
     <file path="/20130610160304_create_users.rb" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370882484228" ignored="false" />
     <file path="/20130610160436_create_transactions.rb" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370881138689" ignored="false" />
@@ -435,7 +429,11 @@
       <created>1370886765847</created>
       <updated>1370886765847</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="configurations">
+      <created>1370886782310</created>
+      <updated>1370886782310</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -504,7 +502,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="database migrations and models creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="configurations" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -519,6 +517,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="database migrations and models creation" />
+    <MESSAGE value="configurations" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
