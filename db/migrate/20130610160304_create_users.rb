@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :encrypted_password
       t.string :gender
-      t.int :account_id
+      t.date :date_of_birth
 
       t.timestamps
     end
