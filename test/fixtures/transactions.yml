@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  from_account: 
+  to_account: 
+  amount: 9.99
+  is_completed: false
+
+two:
+  from_account: 
+  to_account: 
+  amount: 9.99
+  is_completed: false
