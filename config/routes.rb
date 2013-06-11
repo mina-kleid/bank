@@ -1,7 +1,13 @@
 Bank::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  resource :welcome, :only => :index
+  root :to => 'welcome#index'
+  resources :users ,:only => :show do
+    resources :transactions,:only => [:new,:create]
+  end
 
+  resource :sessions ,:only => [:create,:destroy]
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

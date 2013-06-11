@@ -4,7 +4,9 @@ class User < ActiveRecord::Base
   attr_accessor :password
 
   has_one :account
-  has_many :transactions,:through => :account
+
+  has_many :debit_transactions,:through => :account,:source => :debit_transactions
+  has_many :credit_transactions,:through => :account,:source => :credit_transactions
 
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i , :message => "Please enter a valid email"
   validates_presence_of :email,:name,:password,:date_of_birth
@@ -16,7 +18,11 @@ class User < ActiveRecord::Base
   def balance
     self.account.balance
   end
-
+  def transactions
+    transactions=debit_transactions + credit_transactions
+    transactions.sort_by! {|t| t.created_at}
+    return transactions
+  end
   def self.authenticate(email, password)
     if user = find_by_email(email)
       if BCrypt::Password.new(user.encrypted_password).is_password? password

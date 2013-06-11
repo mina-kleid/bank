@@ -7,7 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%if session[:users].present?%>
+<%=link_to "Log Out", sessions_path,:method => :delete%>
+<%end%>
 
+
+<% flash.each do |type, message|%>
+    <div>
+     <%= message%>
+    </div>
+<%end%>
 <%= yield %>
 
 </body>

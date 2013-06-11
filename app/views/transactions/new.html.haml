@@ -1,0 +1,9 @@
+- if @transaction.errors.any?
+  =@transaction.errors.full_messages
+=form_for [@user,@transaction] do |f|
+  =f.hidden_field :from_account
+  =f.label :to_account,"To Account"
+  =f.text_field :to_account
+  =f.label :amount,"Amount"
+  =f.text_field :amount
+  =f.submit :Execute
