@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f64b65dd-8393-4709-b3a6-de7f702f74b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/bank.iml" afterPath="$PROJECT_DIR$/.idea/bank.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bank.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370988823234" ignored="false" />
+    <file path="/Dummy.txt" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370988835771" ignored="false" />
     <file path="/database.yml" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370880613689" ignored="false" />
     <file path="/20130610160304_create_users.rb" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370882484228" ignored="false" />
     <file path="/20130610160436_create_transactions.rb" changelist="f64b65dd-8393-4709-b3a6-de7f702f74b9" time="1370881138689" ignored="false" />
@@ -517,7 +515,11 @@
       <created>1370988825772</created>
       <updated>1370988825772</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="some progress">
+      <created>1370988838694</created>
+      <updated>1370988838694</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
