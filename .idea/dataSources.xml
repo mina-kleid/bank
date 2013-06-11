@@ -27,7 +27,7 @@
     </data-source>
     <data-source source="LOCAL" name="Rails bank: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="f2d9a549-23cd-4464-8e46-44a34b17d036">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/bank_prod</jdbc-url>
+      <jdbc-url>jdbc:mysql://127.0.0.1/bank_test</jdbc-url>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/mysql-connector-license.txt</url>
