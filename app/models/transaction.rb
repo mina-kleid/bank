@@ -1,19 +1,21 @@
 class TransactionValidator< ActiveModel::Validator
   def validate(record)
-    if record.source_account
-       if record.source_account.balance - record.amount < 0
-         record.errors[:base] << "Sorry! you dont have sufficient funds for this transaction"
-       end
-       if record.to_account
-         if Account.where(:id => record.to_account).empty?
-           record.errors[:base] << "Sorry! You have entered a wrong account number"
+    if record.new_record?
+      if record.source_account
+         if record.source_account.balance - record.amount < 0
+           record.errors[:base] << "Sorry! you dont have sufficient funds for this transaction"
          end
-       end
-      if record.to_account.eql?(record.from_account)
-        record.errors[:base] << "You cannot transfer money to yourself"
+         if record.to_account
+           if Account.where(:id => record.to_account).empty?
+             record.errors[:base] << "Sorry! You have entered a wrong account number"
+           end
+         end
+        if record.to_account.eql?(record.from_account)
+          record.errors[:base] << "You cannot transfer money to yourself"
+        end
+      else
+        record.errors[:base] << "Sorry! something went wrong, Please contact our support team"
       end
-    else
-      record.errors[:base] << "Sorry! something went wrong, Please contact our support team"
     end
   end
 end

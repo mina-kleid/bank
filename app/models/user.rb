@@ -9,7 +9,7 @@ class User < ActiveRecord::Base
   has_many :credit_transactions,:through => :account,:source => :credit_transactions
 
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i , :message => "Please enter a valid email"
-  validates_presence_of :email,:name,:password,:date_of_birth
+  validates_presence_of :email,:name,:password
   validates_uniqueness_of :email, :message => "This email address is already registered"
 
   before_save :hash_new_password, :if=>:password_changed?

@@ -11,6 +11,7 @@ class TransactionsController < ApplicationController
     @transaction.to_account=params[:transaction][:to_account]
     @transaction.amount=params[:transaction][:amount]
     if @transaction.save
+      flash[:notice]= "Transaction completed successfully"
       redirect_to user_path(:id => @user.id)
     else
       render :new
