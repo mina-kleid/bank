@@ -12,3 +12,9 @@ through the console as in the example below
 
 All new users created get a 100 euro in the balance as a starting balance and a gift from the bank
 
+
+Also you can check the user balance through the console
+
+----- new_user.balance
+
+should return the balance of the user
